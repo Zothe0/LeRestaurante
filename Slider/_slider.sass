@@ -1,6 +1,6 @@
 @import "C:/Users/koche/Desktop/WebProjects/#Clean project/sass/_reseter.sass"
 
-$slider-width: 900px
+$slider-width: 100%
 $slider-height: 300px
 .wrapper
   align-items: center
@@ -9,7 +9,7 @@ $slider-height: 300px
   width: $slider-width
   height: $slider-height
   overflow: hidden
-  background-color: deeppink
+  // background-color: deeppink
   position: relative
 .slider-track
   background-color: yellow
@@ -20,13 +20,18 @@ $slider-height: 300px
   height: $slider-height
   min-width: $slider-width
   position: relative
+@media screen and ( max-width: 940px )
+  .slider
+    height: 600px
+  .slider-item
+    height: 600px
 .btn-prev, .btn-next
   position: absolute
   z-index: 10
   text-align: center
-.btn-prev
-  top: 50%
-  left: 0
-.btn-next
-  top: 50%
-  right: 0
+// .btn-prev
+//   top: 50%
+//   left: 0
+// .btn-next
+//   top: 50%
+//   right: 0

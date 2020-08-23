@@ -3,7 +3,8 @@ const track = document.querySelector('.slider-track')
 const item = document.querySelector('.slider-item')
 const btnNext = document.querySelector('.btn-next')
 const itemQuantity = track.children.length
-const itemWidth = item.clientWidth
+borderSize = (2)*2 //! В скобках указывать длину бордера из стилей
+const itemWidth = item.clientWidth+borderSize
 const movePosition = itemWidth
 const stopPoint = -(itemQuantity*itemWidth)
 
