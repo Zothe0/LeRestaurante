@@ -1,0 +1,32 @@
+@import "C:/Users/koche/Desktop/WebProjects/#Clean project/sass/_reseter.sass"
+
+$slider-width: 900px
+$slider-height: 300px
+.wrapper
+  align-items: center
+  justify-content: center
+.slider
+  width: $slider-width
+  height: $slider-height
+  overflow: hidden
+  background-color: deeppink
+  position: relative
+.slider-track
+  background-color: yellow
+  display: flex
+  transition-duration: 500ms
+  position: relative
+.slider-item
+  height: $slider-height
+  min-width: $slider-width
+  position: relative
+.btn-prev, .btn-next
+  position: absolute
+  z-index: 10
+  text-align: center
+.btn-prev
+  top: 50%
+  left: 0
+.btn-next
+  top: 50%
+  right: 0
