@@ -793,7 +793,7 @@ textarea {
   position: fixed;
   top: 20px;
   left: 0;
-  z-index: 10;
+  z-index: 20;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,6 +804,7 @@ textarea {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__logo {
