@@ -1080,6 +1080,7 @@ textarea {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+    margin-bottom: 20px;
   }
   .header__info-header {
     font-size: 22px;
@@ -1238,6 +1239,11 @@ textarea {
   overflow: hidden;
   background-color: #ffffff;
   z-index: 10;
+  display: inline;
+}
+
+.daily-menu__dish-name span:last-child {
+  max-height: 28px;
 }
 
 .daily-menu__dish-name span:last-child {
@@ -1250,7 +1256,7 @@ textarea {
 }
 
 .daily-menu__dish-name::before {
-  content: "........................................................................................................................................";
+  content: ".................................................................................................................................................................";
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1288,7 +1294,7 @@ textarea {
 }
 
 .daily-menu__alergens::before {
-  content: "........................................................................................................................................";
+  content: "...........................................................................................................................................................................................................................";
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -1368,61 +1374,12 @@ textarea {
           box-sizing: border-box;
 }
 
-.daily-menu__slider-item::after {
-  content: "";
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #f6f6f6;
-  position: absolute;
-  top: -40px;
-  right: -40px;
-}
-
-.daily-menu__slider-item::before {
-  content: "";
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #f6f6f6;
-  position: absolute;
-  bottom: -40px;
-  right: -40px;
-}
-
 .daily-menu__wrap {
   width: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.daily-menu__wrap::after {
-  content: "";
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #f6f6f6;
-  position: absolute;
-  top: -40px;
-  left: -40px;
-}
-
-.daily-menu__wrap::before {
-  content: "";
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2px solid #f6f6f6;
-  position: absolute;
-  bottom: -40px;
-  left: -40px;
-  z-index: 10;
 }
 
 .daily-menu__slider-img {
@@ -1455,6 +1412,7 @@ textarea {
 .daily-menu__slider-column header {
   font-family: MyriadPro-It;
   font-size: 24px;
+  font-weight: bold;
   letter-spacing: 1.2px;
   text-align: left;
   color: #2b2b2b;
@@ -1504,6 +1462,25 @@ textarea {
 }
 
 @media screen and (max-width: 940px) {
+  .daily-menu__row {
+    height: 640px;
+    margin-bottom: 40px;
+  }
+  .daily-menu__column:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 0;
+  }
+  .daily-menu__column:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding: 0;
+  }
+  .daily-menu__img {
+    margin-right: 15px;
+  }
   .daily-menu__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1521,6 +1498,21 @@ textarea {
     margin: 0;
     right: 12%;
     top: 88%;
+  }
+  .daily-menu__slider {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .daily-menu__btn-next {
+    top: 93%;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .daily-menu__btn-next {
+    top: 96%;
   }
 }
 
