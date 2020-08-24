@@ -1,8 +1,9 @@
-//Fonts
-=fontMPLSE($size:16px)
-  font-family: 'Myriad Pro LightSemiExt', serif
-  font-size: $size
-  
-=fontMPR($size:16px)
-  font-family: 'Myriad Pro Regular', serif
-  font-size: $size
+@mixin placeholder()
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
