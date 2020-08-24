@@ -1826,6 +1826,9 @@ textarea {
 }
 
 @media screen and (max-width: 430px) {
+  .footer__form {
+    margin-left: -10px;
+  }
   .footer__email {
     width: 160px;
     margin-right: 10px;
